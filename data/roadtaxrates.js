@@ -3,7 +3,7 @@ var data = [
 		"man": "Toyota",
 		"model": "Lexus",
 		"engine_size": 2000,
-		"co2_emission": 150,
+		"co2_emission": 120,
 		"dop": 2006
 	},
 	{

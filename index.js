@@ -35,6 +35,22 @@ CalcObject.calc = function(man, model, dor) {
   	if (isOnOrBefore) {
   		var es = rateMap[man.toLowerCase() + '-' + model.toLowerCase()].engine_size;
   		return (es <= 1550) ? 110 : 165;
+  	} else {
+  		var ce = rateMap[man.toLowerCase() + '-' + model.toLowerCase()].co2_emission;
+  		debug('CO2 emission: %s', ce);
+  		if (ce <= 100) {
+  			return 65;
+  		} else if (ce <= 120) {
+  			return 75;
+  		} else if (ce <= 150) {
+  			return 105;
+  		} else if (ce <= 165) {
+  			return 125;
+  		} else if (ce <= 185) {
+  			return 145;
+  		} else {
+  			return 160;
+  		}
   	}
 	return 0.0;
 }
