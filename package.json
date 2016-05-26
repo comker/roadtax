@@ -1,0 +1,14 @@
+{
+  "name": "roadtax",
+  "version": "0.1.0",
+  "description": "The road tax calculation utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*-test.js"
+  },
+  "keywords": [
+    "roadtax"
+  ],
+  "author": "",
+  "license": "ISC"
+}
