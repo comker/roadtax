@@ -1,5 +1,6 @@
 var assert = require('chai').assert;
-var calcObject = require('../../index.js');
+var Calculator = require('../../app/roadtax-calculator.js');
+var calcObject = new Calculator();
 
 describe('calc() function', function() {
 	describe('cars', function() {
