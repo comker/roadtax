@@ -28,4 +28,20 @@ describe('calc() function', function() {
 			assert(tax == 75);	
 		});
 	});
+	describe('vans',function(){
+		it('CAcultate tax for Huyndai-Linh, weight (3500), so tax should be 190',function(){
+			var tax=calcObject.calc('Huyndai','Linh',3500);
+			assert(tax==190,'Huyndai-Linh must have tax 190 GBP');
+		});
+
+		it ('Calculate tax for Mescedez - trong,weight(2500), so tax should be 165', function(){
+			var tax=calcObject.calc('Mescedez','trong',2500);
+			assert(tax==165,'Mescedez-trong must have tax 165 GBP ');
+		})
+		it('Calculate tax for ben-linh, weight(3600),so tax should be 190',function(){
+			var tax=calcObject.calc('Ben','Linh',3600);
+			assert(tax==190,'Ben-linh must have tax 190 GBP ');
+
+		})
+	})
 })
